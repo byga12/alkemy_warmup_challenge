@@ -2,6 +2,9 @@ import { useEffect, useState } from "react"
 import Post from "../components/Post";
 import { fetchPosts } from "../services/api"
 
+
+
+
 export default function HomePage() {
 
   const [posts, setPosts] = useState([]);
@@ -11,12 +14,14 @@ export default function HomePage() {
   }, [])
 
   return (
-    <div>
-      This is homepage
+    <div style={{marginTop:"4rem"}}>
+    
       {posts ?
         posts.map(post => <Post key={post.id} {...post}/>) 
         : null
       }
+
+
     </div>
   )
 }

@@ -1,10 +1,15 @@
 import React from 'react'
 
+//React-Bootstrap
+import Card from 'react-bootstrap/Card';
+
+
 export default function Post({body, id, title, userId}) {
   return (
-    <div style={{marign: "1rem"}}>
-      <h2>{title}</h2>
-      <p>{body}</p>
-    </div>
+    <Card className="p-3">
+      
+      <Card.Title>{title}</Card.Title>
+      <Card.Text>{body}</Card.Text>
+    </Card>
   )
 }
