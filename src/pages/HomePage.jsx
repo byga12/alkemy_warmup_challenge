@@ -14,7 +14,7 @@ export default function HomePage() {
   }, [])
 
   return (
-    <div style={{marginTop:"4rem"}}>
+    <div>
     
       {posts ?
         posts.map(post => <Post key={post.id} {...post}/>) 

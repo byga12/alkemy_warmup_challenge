@@ -1,0 +1,26 @@
+
+
+
+
+.sideBar{
+  position: sticky;
+  top: 0;
+}
+
+.sideBarItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-block: 1.5rem;
+}
+
+.topBar {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
