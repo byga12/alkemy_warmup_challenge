@@ -1,4 +1,4 @@
-import {Route, Link} from 'wouter'
+import {Route} from 'wouter'
 import HomePage from './pages/HomePage';
 
 //bootstrap
