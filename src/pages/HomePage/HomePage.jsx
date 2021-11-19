@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import Post from "../components/Post";
-import { fetchPosts } from "../services/api"
+import Post from "../../components/Post";
+import { fetchPosts } from "../../services/api"
 
 //styles
 import s from './HomePage.module.css'
@@ -28,7 +28,7 @@ export default function HomePage() {
         <Spinner animation="border" variant="info" style={{marginBlock:"2rem"}}/>
         : posts ?
             posts.map(post => <Post key={post.id} {...post}/>) 
-           : null
+            : null
       }
 
     </div>

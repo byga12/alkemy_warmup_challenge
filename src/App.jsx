@@ -1,5 +1,6 @@
 import {Route} from 'wouter'
-import HomePage from './pages/HomePage';
+import HomePage from './pages/HomePage/HomePage';
+import DetailPage from './pages/DetailPage/DetailPage';
 
 //bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -39,6 +40,7 @@ function App() {
           <Col className="border-start border-end" style={{padding:"0px"}}>
             <div className={`${s.topBar} border-bottom`}>Inicio</div>
             <Route path='/' component={HomePage}/>
+            <Route path='/post/:id' component={DetailPage}/>
           </Col>
 
           <Col xs={4}>
