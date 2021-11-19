@@ -7,3 +7,7 @@ export function fetchPosts() {
 export function getPostById(id) {
   return axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
 }
+
+export function deletePostById(id) {
+  return axios.delete(`https://jsonplaceholder.typicode.com/posts/${id}`)
+}

@@ -8,23 +8,20 @@ import Card from 'react-bootstrap/Card';
 
 
 
-export default function Post({body, id, title, userId}) {
+export default function Post({body, id, title, userId, handleDelete, handleEdit, isDetailed}) {
   const setLocation = useLocation()[1];
 
 
-  const handleDelete = id => {
-    console.log("delete",id);
-  }
-
-  const handleEdit = id => {
-    console.log("edit",id);
-  }
-
+ 
   return (
-    <Card onClick={()=> setLocation(`/post/${id}`)} className={`p-3 border-bottom ${s.card}`} style={{borderRadius:"0px",border:"none"}}>
+    <Card onClick={()=> setLocation(`/post/${id}`)} className={`p-3 border-bottom ${s.card}`} style={{borderRadius:"0px",border:"none", width:"100%"}}>
       
-      <Card.Title>{title}</Card.Title>
-      <Card.Text>{body}</Card.Text>
+      <Card.Title style={{textAlign:"center", padding: "2rem"}}>{title}</Card.Title>
+
+      {isDetailed ?
+        <Card.Text>{body}</Card.Text>
+        : null
+      }
 
       <div className={s.footer}>
         <div className={s.deleteButton} onClick={(e) => {handleDelete(id);e.stopPropagation()}}>

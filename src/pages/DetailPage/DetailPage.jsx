@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import Post from '../../components/Post';
+import Post from '../../components/Post/Post';
 import { getPostById } from '../../services/api';
 
 //Styles
@@ -29,7 +29,7 @@ export default function DetailPage({params}) {
       {isLoading ?
         <Spinner animation="border" variant="info" style={{marginBlock:"2rem"}}/>
         : post ?
-          <Post key={post.id} {...post}/>
+          <Post key={post.id} {...post} isDetailed={true}/>
           : null
       }
     </div>
