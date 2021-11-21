@@ -2,18 +2,6 @@
 
 
 
-.sideBar{
-  position: sticky;
-  top: 0;
-}
-
-.sideBarItem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding-block: 1.5rem;
-}
 
 .topBar {
   position: sticky;

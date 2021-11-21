@@ -12,10 +12,16 @@ import Spinner from 'react-bootstrap/Spinner';
 import { deletePostById } from '../../services/api'
 
 
+
+
 export default function HomePage() {
 
   const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  
+
+
+
 
   useEffect(()=> {
     setIsLoading(true);
@@ -23,6 +29,7 @@ export default function HomePage() {
       setPosts(res.data)
       setIsLoading(false)
     })
+    
   }, [])
 
 
@@ -37,8 +44,6 @@ export default function HomePage() {
   const handleEdit = id => {
     console.log("edit",id);
   }
-
-
 
 
 
