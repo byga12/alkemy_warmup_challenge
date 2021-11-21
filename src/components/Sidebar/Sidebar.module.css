@@ -8,6 +8,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
+  cursor: pointer;
+}
 
-  padding-block: 1.5rem;
+.enabled {
+  opacity: 0.3;
+}
+
+
+
+.logo {
+  cursor: auto;
 }

@@ -17,7 +17,6 @@ export const { setUserToken } = userTokenSlice.actions
 export default userTokenSlice.reducer;
 
 
-//codigo de ejemplo
-export const fetchAllUsers = (token) => (dispatch) => {
+export const setToken = (token) => (dispatch) => {
   dispatch(setUserToken(token))
 }

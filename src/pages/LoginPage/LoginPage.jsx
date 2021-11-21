@@ -2,7 +2,7 @@ import { Formik } from 'formik';
 import axios from 'axios';
 
 //redux
-import {fetchAllUsers} from '../../store/slices/user'
+import {setToken} from '../../store/slices/user'
 import { useDispatch } from "react-redux";
 
 import { useLocation } from 'wouter';
@@ -50,7 +50,7 @@ export default function LoginPage() {
         login(values.email, values.password)
         .then(res => {
           const token = res.data.token;
-          dispatch(fetchAllUsers(token));
+          dispatch(setToken(token));
         })
         .catch(() => {
           actions.setFieldError("submitError", "El email y/o la contraseña ingresados no son válidos")
