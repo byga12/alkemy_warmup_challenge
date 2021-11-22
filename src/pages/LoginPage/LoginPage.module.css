@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 91vh;
   background: rgba(250,250,250);
 }
 
@@ -48,4 +48,18 @@
 
 .error{
   color: #ca0e0e;
+}
+
+@media (max-width:250px) {
+  .formInput {
+    padding: 0.3rem 0.6rem;
+    font-size: .8rem;
+  }
+  .form {
+    font-size: .7rem;
+  }
+  .submitButton {
+    font-size: .7rem;
+    padding: .5rem 0;
+  }
 }

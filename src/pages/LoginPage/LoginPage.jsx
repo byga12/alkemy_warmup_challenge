@@ -1,6 +1,9 @@
 import { Formik } from 'formik';
 // import axios from 'axios';
 
+//api
+import { login } from '../../services/api';
+
 //redux
 import {setToken} from '../../store/slices/user'
 import { useDispatch } from "react-redux";
@@ -22,24 +25,6 @@ const validate = values => {
   return errors;
 };
 
-
-
-//una función para "simular" el login, devuelve una promesa que al ser resulta correctamente nos da un token.
-const login = (email, password) => {
-  return new Promise((res, rej) => {
-    if (email === "challenge@alkemy.org" && password === "react") {
-      res({token: Math.round(Math.random()*1000000000)})
-    } else rej();
-  })
-}
-
-//Login con petición POST (no funciona en producción)
-// const login = (email, password) => {
-//   return axios.post('http://challenge-react.alkemy.org/', {
-//     email,
-//     password,
-//   })
-// }
 
 
 
