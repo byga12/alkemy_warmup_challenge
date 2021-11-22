@@ -20,6 +20,8 @@
 
 .logo {
   cursor: auto;
+  margin-top: 0;
+  padding-top: 2rem;
 }
 
 .logoutButton {
