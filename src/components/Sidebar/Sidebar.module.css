@@ -21,3 +21,7 @@
 .logo {
   cursor: auto;
 }
+
+.logoutButton {
+  margin-top: 5rem;  
+}
