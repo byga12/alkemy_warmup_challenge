@@ -52,7 +52,7 @@ function App() {
 
         <Row>
 
-          <Col xs={1}>   
+          <Col className={s.dynamicBar} xs={1}>   
            <Sidebar/>
           </Col>
 
@@ -63,7 +63,7 @@ function App() {
             <Route path='/post/:id' component={DetailPage}/>
           </Col>
 
-          <Col xs={4}>
+          <Col md={4}>
             
           </Col>
 

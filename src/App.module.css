@@ -12,3 +12,15 @@
   font-size: 1.2rem;
   font-weight: 700;
 }
+
+
+@media (max-width: 540px) {
+  .dynamicBar {
+    background-color: white;
+    border-top: 1px solid gray;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    bottom: 0;
+  }
+}
